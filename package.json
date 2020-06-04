@@ -1,0 +1,24 @@
+{
+  "name": "tag",
+  "version": "1.0.0",
+  "description": "",
+  "author": "michaelt",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/components": "^0.3.3",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}

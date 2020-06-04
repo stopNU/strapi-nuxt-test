@@ -1,0 +1,108 @@
+@import './_variables.scss';
+
+div.outer-wrapper{
+    max-width: $outer-wrapper;
+    margin: 0 auto;
+}
+
+div.inner-wrapper{
+    max-width: $inner-wrapper;
+    margin: 0 auto;
+    &.with-padding{
+        padding: 90px 0;
+    }
+}
+
+div.content-wrapper{
+    max-width: $content-wrapper;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 90px;
+    font-family: $font-headlines;
+    color: $color-headlines;
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: $font-headlines;
+    color: $color-headlines;
+}
+h4{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    font-family: $font-headlines;
+    color: $color-headlines;
+}
+h5{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    font-family: $font-headlines;
+    color: $color-headlines;
+}
+h6{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    font-family: $font-headlines;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: $font-paragraphs;
+    color: $color-text;
+}
+.white{
+    color: $color-white;
+}
+.btn a{
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+    font-family: $font-headlines;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    background-color: $color-brand;
+    &:hover{
+        background-color: $color-brand-hover;
+    }
+}
+
+.fullscreen-bg{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    //filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    //-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: 500px;
+    //background-color: #FFFFFF; /* Just for now*/
+    @media screen and (max-width: $media-desktop) {
+        background-attachment: initial;
+    }
+    @media screen and (max-width: $media-tablet) {
+        height: 100%;
+    }
+}
+
+div.line{
+    width: 100%;
+    height: 10px;
+    background-color: $color-brand;
+    max-width: $content-wrapper;
+    margin: 0 auto;
+}
