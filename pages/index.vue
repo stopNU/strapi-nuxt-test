@@ -1,11 +1,12 @@
 <template>
   <div class="container">
     <div>
-      <LazyHomepageHeader :data="content.header" v-if="content.header" />
+      test
+      <!--<LazyHomepageHeader :data="content.header" v-if="content.header" />
       <LazyHomepageIntro :data="content.intro" v-if="content.intro" />
       <LazyHomepageFeatures :data="content.features" v-if="content.features" />
       <LazyHomepageSpecialProject :data="content.special_project" v-if="content.special_project" />
-      <LazyHomepageFeaturedArticles />
+      <LazyHomepageFeaturedArticles />-->
     </div>
   </div>
 </template>
@@ -22,7 +23,7 @@ export default {
     
   },
   mounted(){
-    console.log('baseAPIUrl', process.env.baseAPIUrl) // world
+    //console.log('baseAPIUrl', process.env.baseAPIUrl) // world
   },
   methods: {
     async fetchContent() {
