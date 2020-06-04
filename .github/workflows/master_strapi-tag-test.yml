@@ -22,8 +22,8 @@ jobs:
 
     - name: yarn install, build, and test
       run: |
-        npm install
-        npm build
+        yarn install
+        yarn build
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v1
