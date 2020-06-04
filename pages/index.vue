@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      test
+      test site
       <!--<LazyHomepageHeader :data="content.header" v-if="content.header" />
       <LazyHomepageIntro :data="content.intro" v-if="content.intro" />
       <LazyHomepageFeatures :data="content.features" v-if="content.features" />

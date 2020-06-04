@@ -1,7 +1,6 @@
 
 module.exports = {
   mode: 'universal',
-  components: true,
   /*
   ** Headers of the page
   */
@@ -17,9 +16,6 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto&display=swap' }
     ]
   },
-  server: {
-    host: '0.0.0.0'
-  },
   /*
   ** Customize the progress-bar color
   */
@@ -32,7 +28,7 @@ module.exports = {
     '@/assets/scss/main.scss',
   ],
   env: {
-      baseAPIUrl: process.env.NODE_ENV !== 'production' ? 'http://localhost:1337/' : 'http://strapi-cms.westeurope.cloudapp.azure.com:1337/',
+    baseAPIUrl: process.env.NODE_ENV !== 'production' ? 'http://localhost:1337/' : 'http://strapi-cms.westeurope.cloudapp.azure.com:1337/',
   },
   styleResources: {
     scss: [
