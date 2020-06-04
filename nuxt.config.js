@@ -17,6 +17,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto&display=swap' }
     ]
   },
+  server: {
+    host: '0.0.0.0'
+  },
   /*
   ** Customize the progress-bar color
   */
