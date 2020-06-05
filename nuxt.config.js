@@ -31,7 +31,7 @@ module.exports = {
     '@/assets/scss/main.scss',
   ],
   env: {
-    baseAPIUrl: process.env.NODE_ENV !== 'production' ? 'http://localhost:1337/' : 'http://strapi-cms.westeurope.cloudapp.azure.com:1337/',
+    baseAPIUrl: process.env.NODE_ENV !== 'production' ? 'http://localhost:1337/' : 'https://m-thomsen.tech/',
   },
   styleResources: {
     scss: [
